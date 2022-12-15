@@ -37,8 +37,4 @@ describe("toNumber()", () => {
         expect(toNumber("+0xF")).to.deep.equal(NaN)
     });
 
-
-
-
-
 })
