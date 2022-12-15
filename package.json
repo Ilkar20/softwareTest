@@ -5,11 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha --exit --timeout 10000 --recursive test"
+    "test": "mocha --exit --timeout 10000 --recursive test",
+    "coverage": "c8 mocha"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "c8": "^7.12.0",
     "chai": "^4.3.7",
     "mocha": "^10.2.0"
   }
