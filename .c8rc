@@ -1,0 +1,9 @@
+{
+  "include": [
+    "src/filter.js",
+    "src/add.js",
+    "src/isEmpty.js",
+    "src/eq.js",
+    "src/toString.js"
+  ]
+}

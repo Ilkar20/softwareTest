@@ -5,12 +5,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha --exit --timeout 10000 --recursive test"
+    "test": "mocha --exit --timeout 10000",
+    "coverage": "npx c8 --reporter=lcov npm run test"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "c8": "^7.12.0",
     "chai": "^4.3.7",
+    "coveralls": "^3.1.1",
     "mocha": "^10.2.0"
   }
 }
