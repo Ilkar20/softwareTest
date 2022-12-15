@@ -6,7 +6,6 @@
   "type": "module",
   "scripts": {
     "test": "mocha --exit --timeout 10000 --recursive test",
-    "coverage": "c8 mocha"
   },
   "author": "",
   "license": "MIT",
