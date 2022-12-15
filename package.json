@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha --exit --timeout 10000",
-    "coverage": "npx c8 --reporter=lcov npm run test"
+    "coverage": "c8 --reporter=lcov npm run test"
   },
   "author": "",
   "license": "MIT",
