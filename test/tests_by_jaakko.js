@@ -39,8 +39,8 @@ describe('Component tests for components 1-5', () => {
             const filteredArr = filter(users, ({ active }) => active);
             const expectedArr = [{ 'user': 'barney', 'active': true }];
             expect(filteredArr).to.eql(expectedArr); // equal vs eql
-        })
-    })
+        });
+    });
     describe('add()', () => {
     /**
      * Adds two numbers.
@@ -58,8 +58,8 @@ describe('Component tests for components 1-5', () => {
 
         it('add(6,4) should return 10', () => {
             expect(add(6,4)).to.equal(10); // equal vs eql
-        })
-    })
+        });
+    });
     describe('isEmpty()', () => {
     /**
      * Checks if `value` is an empty object, collection, map, or set.
@@ -98,8 +98,8 @@ describe('Component tests for components 1-5', () => {
 
         it('isEmpty([1, 2, 3]) should return false', () => {
             expect(isEmpty([1, 2, 3])).to.equal(false);
-        })
-    })
+        });
+    });
     describe('eq()', () => {
     /**
      * Performs a
@@ -134,8 +134,8 @@ describe('Component tests for components 1-5', () => {
 
         it("eq('a', 'a') should return true", () => {
             expect(eq('a', 'a')).to.equal(true);
-        })
-    })    
+        });
+    });
     describe('toString()', () => {
     /**
      * Converts `value` to a string. An empty string is returned for `null`
@@ -159,6 +159,6 @@ describe('Component tests for components 1-5', () => {
     
         it("toString([1, 2, 3]) should return '1,2,3'", () => {
             expect(toString([1, 2, 3])).to.equal('1,2,3');
-        })
-    })
+        });
+    });
 });
