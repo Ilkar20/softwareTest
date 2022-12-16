@@ -21,6 +21,9 @@ describe("toNumber()", () => {
         const fun = function () {};
         expect(toNumber(fun)).to.deep.equal(NaN)
     });
+    it("test empty object as parameter", () =>{
+        expect(toNumber(new Number)).to.deep.equal(0)
+    });
     it("boolean should retuen 0 or 1", () =>{
         expect(toNumber(true)).to.deep.equal(1)
     });
