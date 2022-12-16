@@ -4,6 +4,11 @@
     "src/add.js",
     "src/isEmpty.js",
     "src/eq.js",
-    "src/toString.js"
+    "src/toString.js",
+    "src/at.js",
+    "src/capitalize.js",
+    "src/isDate.js",
+    "src/toNumber.js",
+    "src/ceil.js"
   ]
 }
