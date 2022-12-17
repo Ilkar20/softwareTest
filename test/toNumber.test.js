@@ -37,12 +37,7 @@ describe("toNumber()", () => {
         expect(toNumber("0o17")).to.deep.equal(15)
     });
     it("hexadecimal cannot be converted", () =>{
-        expect(toNumber()).to.deep.equal(NaN)
-    });
-    describe.skip('skip failing tests for toNumber()', () => {        
-        it("hexadecimal should to converted to decimal", () =>{
-            expect(toNumber("+0xF")).to.deep.equal(15)
-        });
+        expect(toNumber("+0xF")).to.deep.equal(NaN)
     });
 
 })
