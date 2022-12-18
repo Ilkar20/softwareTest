@@ -1,7 +1,8 @@
 import { expect } from "chai";
 import { default as filter } from "../src/filter.js";
 
-describe('filter()', () => {
+describe("filter() where: \n   const users = [{ 'user': 'barney', 'active': true },\n\
+                  { 'user': 'fred', 'active': false }];", () => {
     /**
      * Iterates over elements of `array`, returning an array of all elements
      * `predicate` returns truthy for. The predicate is invoked with three
@@ -28,14 +29,24 @@ describe('filter()', () => {
     const users = [{ 'user': 'barney', 'active': true },
                    { 'user': 'fred', 'active': false }];
 
-    it('should behave as documented', () => {
+    it('filter by active', () => {
         const filteredArr = filter(users, ({ active }) => active);
         const expectedArr = [{ 'user': 'barney', 'active': true }];
         expect(filteredArr).to.eql(expectedArr); // equal vs eql
     });
-    it('should behave as documented', () => {
+    it('filter by !active', () => {
         const filteredArr = filter(users, ({ active }) => !active);
+        const expectedArr = [{ 'user': 'fred', 'active': false }];
+        expect(filteredArr).to.eql(expectedArr);
+    });
+    it('filter by name: barney', () => {
+        const filteredArr = filter(users, ({ user }) => user === 'barney');
         const expectedArr = [{ 'user': 'barney', 'active': true }];
-        expect(filteredArr).to.not.eql(expectedArr); // equal vs eql
+        expect(filteredArr).to.eql(expectedArr);
+    });
+    it("filter by name: ''", () => {
+        const filteredArr = filter(users, ({ user }) => user === '');
+        const expectedArr = [[]];
+        expect(filteredArr).to.eql(expectedArr);
     });
 });
