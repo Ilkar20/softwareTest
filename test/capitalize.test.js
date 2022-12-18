@@ -13,10 +13,10 @@ describe("capitalize()", () => {
     it("Converts the string object 'test' to 'Test'", () =>{
         expect(capitalize(new String("test"))).to.equal('Test')
     });
-    describe.skip('skip failing tests for capitalize()', () => {        
-        it("number parameters should throw an error", () =>{
-            expect(capitalize(560)).to.throw(Error);
-        });
-
+    it("test number parameters", () =>{
+        expect(capitalize("560")).to.equal('560')
+    });
+    it("test special string value", () =>{
+        expect(capitalize("#%5t")).to.equal('#%5t')
     });
 })

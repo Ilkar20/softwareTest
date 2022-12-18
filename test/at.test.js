@@ -29,15 +29,16 @@ describe("at()", () => {
         const value = at(object, '[0]')
         expect(value).to.deep.equal(["t"])
     });
-    describe.skip('skip failing tests for at()', () => {        
-        it("number parameters should throw an error", () =>{
-            expect(at(1000, "[0]")).to.throw(Error);
-        });
-        it("null parameters should throw an error", () =>{
-            expect(at(null, "[0]")).to.throw(Error);
-        });
-        it("undefined parameters should throw an error", () =>{
-            expect(at(undefined)).to.throw(Error);
-        });
+    it("sould return empty array without path", () =>{
+        expect(at("test")).to.deep.equal([])
+    });
+    it("test null parameters", () =>{
+        expect(at(null)).to.deep.equal([])
+    });
+    it("test undefined parameters", () =>{
+        expect(at(undefined)).to.deep.equal([])
+    });
+    it("number parameters with path should return undefined", () =>{
+        expect(at(1000, "[0]")).to.deep.equal([undefined]);
     });
 })
