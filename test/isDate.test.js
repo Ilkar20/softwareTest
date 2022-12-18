@@ -35,9 +35,9 @@ describe("isDate()", () => {
         expect(isDate(["first", "second", "third"])).to.equal(false)
     });
     describe.skip('skip failing tests for isDate()', () => {        
-        it("wrong Date object should throw an error", () =>{
+        it("wrong Date object should return false", () =>{
             const date = new Date("test");
-            expect(isDate(date)).to.throw(Error);
+            expect(isDate(date)).to.equal(false);
         });
     });
 })
