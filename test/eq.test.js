@@ -1,4 +1,5 @@
 import { expect } from "chai";
+import getTag from "../src/.internal/getTag.js";
 import { default as eq } from "../src/eq.js";
 
 describe("eq() where \n   const object = { 'a': 1 }\n   const other = { 'a': 1 }", () => {
@@ -32,13 +33,28 @@ describe("eq() where \n   const object = { 'a': 1 }\n   const other = { 'a': 1 }
      * eq(NaN, NaN)
      * // => true
      */
-    const object = { 'a': 1 }
-    const other = { 'a': 1 } 
+    const object = { 'a': 1 };
+    const other = { 'a': 1 };
+    it("eq(1, 1) should return true", () => {
+        expect(eq(1, 1)).to.equal(true);
+    });
+    it("eq(1, 0) should return false", () => {
+        expect(eq(1, 0)).to.equal(false);
+    });
     it("eq('a', 'a') should return true", () => {
         expect(eq('a', 'a')).to.equal(true);
     });
     it("eq('a', 'b') should return false", () => {
         expect(eq('a', 'b')).to.equal(false);
+    });
+    it("eq('', '') should return true", () => {
+        expect(eq('', '')).to.equal(true);
+    });
+    it("eq('abc', 'abc') should return true", () => {
+        expect(eq('abc', 'abc')).to.equal(true);
+    });
+    it("eq('abc', 'abcd') should return false", () => {
+        expect(eq('abc', 'abcd')).to.equal(false);
     });
     it("eq(NaN, NaN) should return true", () => {
         expect(eq(NaN, NaN)).to.equal(true);

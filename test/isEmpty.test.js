@@ -1,4 +1,5 @@
 import { expect } from "chai";
+import isPrototype from "../src/.internal/isPrototype.js";
 import { default as isEmpty } from "../src/isEmpty.js";
 
 describe('isEmpty()', () => {
@@ -36,12 +37,20 @@ describe('isEmpty()', () => {
      * isEmpty({ 'a': 1 })
      * // => false
      */
+    const testObject = {name: "test"};
     const emptyMap = new Map();
     const emptySet = new Set();
     const mapWithStuff = new Map();
     mapWithStuff.set(0, 'stuff');
     const setWithStuff = new Set();
     setWithStuff.add(10);
+
+    it('isEmpty(testObject) should return false', () => {
+        expect(isEmpty(testObject)).to.equal(false);
+    });
+    it('isEmpty(Object.getPrototypeOf(testObject)) should return true', () => {
+        expect(isEmpty(Object.getPrototypeOf(testObject))).to.equal(true);
+    });
     it('isEmpty(mapWithStuff) should return false', () => {
         expect(isEmpty(mapWithStuff)).to.equal(false);
     });
