@@ -1,0 +1,260 @@
+{
+  "id": "ad329827-8724-49f7-a4b8-1969f145f345",
+  "version": "2.0",
+  "name": "Tests_292281",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "4877cdd3-921a-488a-9863-e95d097241c1",
+    "name": "test 1",
+    "commands": [{
+      "id": "1f63af85-ae30-4ba3-b6b7-b6d02cbf1a23",
+      "comment": "",
+      "command": "open",
+      "target": "/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "241733af-cfdd-44a3-8997-62999af7d30b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "805x690",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d917a8a-1e89-4162-ab5e-c8d6a779e006",
+      "comment": "",
+      "command": "click",
+      "target": "id=myCheck",
+      "targets": [
+        ["id=myCheck", "id"],
+        ["name=understood", "name"],
+        ["css=#myCheck", "css:finder"],
+        ["xpath=//input[@id='myCheck']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ade0caf8-7c48-4155-b3ce-808e26875f1f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 2",
+      "targets": [
+        ["linkText=Page 2", "linkText"],
+        ["css=.button2", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 2')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'page2.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96a450bc-0618-4843-9baa-280ca5dd41b1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 3",
+      "targets": [
+        ["linkText=Page 3", "linkText"],
+        ["css=.button3", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 3')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'page3.html')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5323713-dd5a-4472-a9cd-dad2711dca9f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 1",
+      "targets": [
+        ["linkText=Page 1", "linkText"],
+        ["css=.button1", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 1')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c317064-c74c-4302-a88a-9cd3e8fc5530",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 3",
+      "targets": [
+        ["linkText=Page 3", "linkText"],
+        ["css=.button3", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 3')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'page3.html')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "585c9f45-f3ca-48f0-8082-81e894426598",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 4",
+      "targets": [
+        ["linkText=Page 4", "linkText"],
+        ["css=.button4", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 4')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'page4.html')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Page 4')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fdce97a-e0be-4a9b-a204-0894de231397",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 2",
+      "targets": [
+        ["linkText=Page 2", "linkText"],
+        ["css=.button2", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 2')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'page2.html')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69cbfdca-0bf0-4a7a-b803-6c521aceef22",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 1",
+      "targets": [
+        ["linkText=Page 1", "linkText"],
+        ["css=.button1", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 1')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c19d714c-5c10-4d68-9a0d-205449dccd7e",
+      "comment": "",
+      "command": "click",
+      "target": "id=myCheck",
+      "targets": [
+        ["id=myCheck", "id"],
+        ["name=understood", "name"],
+        ["css=#myCheck", "css:finder"],
+        ["xpath=//input[@id='myCheck']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68d3eea2-3afb-49d4-ae78-c5dd2cec5bea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 3",
+      "targets": [
+        ["linkText=Page 3", "linkText"],
+        ["css=.button3", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 3')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'page3.html')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a839bce-317c-4258-b58b-671cd0cb6920",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 4",
+      "targets": [
+        ["linkText=Page 4", "linkText"],
+        ["css=.button4", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 4')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'page4.html')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Page 4')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "475d6747-2019-4e8d-99d8-544e587f4a86",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 3",
+      "targets": [
+        ["linkText=Page 3", "linkText"],
+        ["css=.button3", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 3')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'page3.html')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Page 3')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42e34dae-f8d3-4e08-8075-61878e8f818c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 4",
+      "targets": [
+        ["linkText=Page 4", "linkText"],
+        ["css=.button4", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 4')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'page4.html')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Page 4')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbd5f624-22b4-4190-87c4-2505fde8295e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 2",
+      "targets": [
+        ["linkText=Page 2", "linkText"],
+        ["css=.button2", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 2')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'page2.html')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cd0368d-6803-409e-99fb-a55a8e3d2c6b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 3",
+      "targets": [
+        ["linkText=Page 3", "linkText"],
+        ["css=.button3", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 3')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'page3.html')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e380812d-2d69-42ff-90bd-60525d5a4aa8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 1",
+      "targets": [
+        ["linkText=Page 1", "linkText"],
+        ["css=.button1", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 1')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e384c7c5-031c-4d69-9023-c72ffa16677a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Page 2",
+      "targets": [
+        ["linkText=Page 2", "linkText"],
+        ["css=.button2", "css:finder"],
+        ["xpath=//a[contains(text(),'Page 2')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'page2.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6645578b-a046-4353-ad4d-9ed6b9197693",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4877cdd3-921a-488a-9863-e95d097241c1"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}

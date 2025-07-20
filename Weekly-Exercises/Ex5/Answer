@@ -1,0 +1,32 @@
+Task 1
+
+1. Where you would use Selenium IDE
+We can use Selenium IDE when we are testing web application.
+2. What are the pros of recording tests?
+We don?t need write tests. It is easy and fast way to test website. 
+3. How about cons?
+Limited support for Image Testing.
+
+
+Task 2
+
+1. Any bugs?
+I didn?t find any bugs from Pages_v2
+2. How the recording of tests would have differed if you had to use the Pages_v2 while recording and creating your test set?
+There are not big differences. I did the recording of tests in the same way.
+
+
+Task 3
+
+1. Selenium Grid is a part of the Selenium Suite that specializes in running multiple tests across different browsers, operating systems, and machines in parallel. It is achieved by routing the commands of remote browser instances where a server acts as a hub. A user needs to configure the remote server in order to execute the tests.
+
+2. Selenium WebDriver is a web framework that permits you to execute cross-browser tests. This tool is used for automating web-based application testing to verify that it performs expectedly. Selenium WebDriver allows you to choose a programming language to create test scripts.
+
+
+Task 4
+
+1. What kind of tests you would consider easier to script in python (or with any other programming language) compared to recording/drag&dropping commands on IDE. 
+We can test for example return value in python.
+2. What is the role of the geckodriver?
+GeckoDriver is the link between your tests in Selenium and the Firefox browser.
+
